@@ -21,6 +21,10 @@
   margin: 0;
 }
 
+.list-group-item-heading {
+  margin-bottom: 7px;
+}
+
 
 /* Custom container */
 .container-narrow {

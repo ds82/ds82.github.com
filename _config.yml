@@ -24,6 +24,21 @@ github :
   show_profile_link : true
   skip_forks : true
 
+comments :
+  provider : disqus
+  disqus :
+    short_name : blog-dennis-io
+  livefyre :
+    site_id : 123
+  intensedebate :
+    account : 123abc
+  facebook :
+    appid : 123
+    num_posts: 5
+    width: 580
+    colorscheme: dark
+
+url: http://blog.dennis.io
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -83,24 +98,6 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
 
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : blog-dennis-io
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: dark
-   
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.

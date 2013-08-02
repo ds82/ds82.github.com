@@ -33,7 +33,7 @@
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
+    <base href="/" />
   </head>
 
   <body>
@@ -81,18 +81,19 @@
           <div class="content">
             {{ content }}
           </div>
-        <hr>
-        <footer>
-          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-            with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-            and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-          </p>
-        </footer>
       </div>
       <div class="col-lg-4">
         {% include ds82/sidebar.html %}
       </div>
     </div>
+    <hr>
+    <footer class="clearfix">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>,
+        <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap v3</a>, cookies, coffee and &lt;3
+      </p>
+    </footer>
+
     <!-- after footer -->
     {% include ds82/after_footer.html %}
     <!-- analytics -->

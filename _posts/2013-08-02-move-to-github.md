@@ -4,7 +4,9 @@ title: "github &lt;3"
 description: ""
 category: blog
 tags: [blog,github]
+comments: true
 ---
+
 [jekyllbootstrap]: http://jekyllbootstrap.com/usage/jekyll-quick-start.html
 [bootstrap]: http://getbootstrap.com/
 

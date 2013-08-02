@@ -1,14 +1,14 @@
 ---
-layout: page
+layout: default
 ---
 {% include JB/setup %}
 
 <div class="blog-index">
   {% assign index = true %}
   {% for post in site.posts %}
-  {% assign page = post.content %}
+  
     <article>
-      {% include themes/twitter_v3/post.html %}
+      {% include themes/twitter_v3/article.html %}
     </article>
   {% endfor %}
   <div class="pagination">
