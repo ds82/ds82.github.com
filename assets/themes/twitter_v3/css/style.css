@@ -25,6 +25,16 @@
   margin-bottom: 7px;
 }
 
+table.highlighttable {
+  width: 100%;
+}
+td.linenos {
+  width: 50px;
+}
+
+.highlight pre {
+  background: #002b36;
+}
 
 /* Custom container */
 .container-narrow {

@@ -21,3 +21,15 @@ but I like the concept.
 
 Next step is to add some plugins to embedd code, github repos and stuff and of course
 producing some content. Well, stay stuned.
+
+---
+
+Just added something to hightlight code:
+{% highlight javascript linenos=table %}
+(function() {
+  var awesome = 'github';
+})();
+{% endhighlight %}
+
+Like it so far .. but I read, that the jekyll engine has some problems with long lines.
+Maybe I switch to gists or something if this anoyes me.
