@@ -15,13 +15,15 @@ var github = (function(){
   return {
     showRepos: function(options){
       $.ajax({
-          url: "https://api.github.com/users/"+options.user+"/repos/"
+          url: "https://api.github.com/users/"+options.user+"/repos"
         , dataType: 'jsonp'
         , crossDomain: true
         , error: function( err ) { error( err, options ); }
         , success: function(data) {
           
-          if ( data.meta && data.meta.status && data.meta.status !== '200' ) {
+          console.log( data );
+
+          if ( data.meta && data.meta.status && data.meta.status !== 200 ) {
             return error( null, options );
           }
 
