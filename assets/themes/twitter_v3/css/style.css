@@ -9,6 +9,9 @@
   margin-top: 5px;
 }
 
+.post-full .content img {
+  float: left;
+}
 
 
 /* Custom container */
