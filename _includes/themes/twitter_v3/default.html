@@ -7,6 +7,8 @@
     <meta name="author" content="{{ site.author.name }}">
 
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script src="{{ BASE_PATH }}/assets/public/javascript/jXHR.js"></script> --
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,16 +76,22 @@
     </div>
 
     <div class="container-narrow">
-      <div class="content">
-        {{ content }}
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="content">
+            {{ content }}
+          </div>
+        <hr>
+        <footer>
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+            with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+            and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          </p>
+        </footer>
       </div>
-      <hr>
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
+      <div class="col-lg-4">
+        {% include ds82/sidebar.html %}
+      </div>
     </div>
     <!-- after footer -->
     {% include ds82/after_footer.html %}
